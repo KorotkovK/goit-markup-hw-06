@@ -787,6 +787,10 @@ h2 {
   margin-top: 4px;
   padding-left: 16px;
   padding-top: 8px;
+  outline: none;
+}
+.input-field:focus-within .lab-inp-text {
+    border-color: var(--color-iris);
 }
 
 .svg-name {
@@ -796,7 +800,6 @@ h2 {
   margin-left: 16px;
   left: 0;
 }
-
 
 .modal-window-button {
   display: flex;
@@ -842,6 +845,9 @@ h2 {
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-left: 8px;
+  position: absolute;
+  margin-top: 2px;
 }
 
 .modal-window-button {
@@ -884,8 +890,12 @@ h2 {
   appearance: none;
   position: absolute;
 }
-.checkbox:checked .checkbox-icon {
+.lab-inp-privacy:checked + .checkbox-icon {
   background-color: #404bbf;
+  background-image: url(/images/checkbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #404bbf;
 }
 
 .checkbox-icon {
@@ -894,7 +904,6 @@ h2 {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  
 }
 
 /* Footer form */
