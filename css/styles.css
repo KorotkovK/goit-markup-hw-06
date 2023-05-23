@@ -892,7 +892,7 @@ h2 {
 }
 .lab-inp-privacy:checked + .checkbox-icon {
   background-color: #404bbf;
-  background-image: url(./checkbox.svg);
+  background-image: url(/checkbox.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #404bbf;
